@@ -1,0 +1,63 @@
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+
+@font-face {
+  font-family: "NetflixSans";
+  src: url("./fonts/NetflixSans-Bold.otf") format("otf"),
+    url("./fonts/NetflixSans-Bold.woff2") format("woff2"),
+    url("./fonts/NetflixSans-Light.otf") format("otf"),
+    url("./fonts/NetflixSans-Light.woff2") format("woff2"),
+    url("./fonts/NetflixSans-Medium.otf") format("otf"),
+    url("./fonts/NetflixSans-Regular.otf") format("otf"),
+    url("./fonts/NetflixSans-Regular.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: " NetflixSans,Roboto, sans-serif";
+&::-webkit-scrollbar{
+  display: none;
+}
+}
+a,h2 {
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+
+.header {
+  $bg: rgb(16, 16, 16);
+
+  height: 100px;
+  background-color: $bg;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  > img {
+    height: 100%;
+    cursor: pointer;
+  }
+  > div {
+    width: 100%;
+    margin-left: 4vmax;
+
+    > a {
+      margin: 1vmax;
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+  }
+
+  > svg {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    &:hover {
+      color: rgb(216, 216, 216);
+    }
+  }
+}
